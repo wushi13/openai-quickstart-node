@@ -15,6 +15,8 @@ export default async function (req, res) {
     return;
   }
 
+  
+
   const animal = req.body.animal || '';
   if (animal.trim().length === 0) {
     res.status(400).json({
